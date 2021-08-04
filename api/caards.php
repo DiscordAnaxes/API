@@ -1,6 +1,9 @@
 <?php
 // make request
 $ch = curl_init();
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+    ''
+));
 curl_setopt($ch, CURLOPT_URL, 'https://api.caards.me/user/get/anaxes');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch,CURLOPT_TIMEOUT,0);
