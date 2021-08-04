@@ -22,7 +22,7 @@
   </head>
   <body style="background-color: #0a0f16">
     <div class="content" style="color: #ffffff">
-      <h1>👋 Hi there!</h1>
+      <h1><i class="twa twa-wave wave"></i>&nbsp;Hi there!</h1>
       <p>Looks like you found Anaxes' API. Well, unfortunately its unavailable for public use <i class="twa twa-cry"></i></p>
       <p>If you are stuck, here is a list of the current endpoints...</p>
       <p>
@@ -31,7 +31,12 @@
           ><span style="color: #1d9bf0"
             ><i class="fab fa-twitter"></i>&nbsp;Twitter</span
           ></a
-        >
+        ><br/>&nbsp;╰&nbsp;<a
+        href="https://api.anaxes.xyz/api/caards.php"
+        ><span style="color: #233649"
+          ><i class="fad fa-user-friends"></i>&nbsp;Caards</span
+        ></a
+      >
       </p>
       <p class="footer">
         Created with a&nbsp;<i class="twa twa-computer"></i>&nbsp;&&nbsp;<i class="twa twa-growing-heart"></i>&nbsp;by
@@ -62,5 +67,38 @@
     a {
       text-decoration: none;
     }
+    .wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
   </style>
 </html>
