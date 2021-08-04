@@ -9,8 +9,8 @@ function config($key = '')
 {
     $config = [
         'name' => 'Simple PHP Website',
-        'site_url' => '',
-        'pretty_uri' => false,
+        'site_url' => 'https://api.anaxes.xyz',
+        'pretty_uri' => true,
         'nav_menu' => [
             '' => 'Home',
             'about-us' => 'About Us',
