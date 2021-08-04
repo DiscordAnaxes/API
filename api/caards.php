@@ -1,6 +1,4 @@
 <?php
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Headers: *");
 // make request
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, 'https://api.caards.me/user/get/anaxes');
