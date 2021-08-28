@@ -7,7 +7,7 @@ fetch("https://api.anaxes.xyz/api/lanyard.php").then(function (response) {
           data.data.discord_status === "online"
             ? "<span class='text-green-500'><i class='fad fa-circle animate-pulse' title='Online'></i>&nbsp;Online</span>"
             : data.data.discord_status === "dnd"
-            ? "<span class='text-red-500'><i class='fad fa-circle animate-pulse' title='Do Not Disturb'></i>&nbsp;Offline</span>"
+            ? "<span class='text-red-500'><i class='fad fa-circle animate-pulse' title='Do Not Disturb'></i>&nbsp;Do Not Disturb</span>"
             : data.data.discord_status === "idle"
             ? "<span class='text-yellow-500'><i class='fad fa-circle animate-pulse' title='Idle'></i>&nbsp;Idle</span>"
             : "<span class='text-gray-500'><i class='fad fa-circle animate-pulse' title='Offline'></i>&nbsp;Offline</span>"
