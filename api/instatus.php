@@ -6,7 +6,7 @@ $ch = curl_init();
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
     'Authorization: Bearer '.$_ENV["instatus_apikey"]
 ));
-curl_setopt($ch, CURLOPT_URL, 'https://api.instatus.com/v1/pages/');
+curl_setopt($ch, CURLOPT_URL, 'https://api.instatus.com/v1/ckrkh1var2452117xndi43h0wz8/components');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $output = curl_exec($ch);
 echo($output);
