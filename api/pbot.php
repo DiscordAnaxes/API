@@ -3,7 +3,7 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
 // make request
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, 'https://pbot-api-v9.herokuapp.com/pbot');
+curl_setopt($ch, CURLOPT_URL, 'https://pbapi.anaxes.xyz/pbot');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $output = curl_exec($ch);
 echo($output);
