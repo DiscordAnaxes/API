@@ -1,4 +1,4 @@
-fetch("https://api.anaxes.xyz/api/lanyard.php").then(function (response) {
+fetch("/api/lanyard.php").then(function (response) {
     if (response.ok) {
       // Check if response went through
       response.json().then(function (data) {
